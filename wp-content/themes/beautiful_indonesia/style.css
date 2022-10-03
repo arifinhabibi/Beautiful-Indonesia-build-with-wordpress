@@ -61,6 +61,11 @@ nav li .login {
     border-radius: 10px;
     margin-left: 40px;
 }
+.mobile {
+  display: none;
+}
+
+
 
 
 
@@ -396,7 +401,7 @@ nav li .login {
   
   
   /* footer */
-#footer {
+  #footer {
     background-color: #007acc;
 }
 #footer .container-footer {
@@ -405,7 +410,17 @@ nav li .login {
 
 #footer .container-footer .row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#footer .container-footer .row .col-brand {
+  grid-column-end: span 4;
+}
+#footer .container-footer .row .col-nav {
+  grid-column-end: span 4;
+}
+#footer .container-footer .row .col-sosmed {
+  grid-column-end: span 4;
 }
 
 #footer .container-footer .col h2 {
@@ -459,10 +474,6 @@ nav li .login {
     text-align: center;
     color: #fff;
     padding: 20px 20px;
-}
-
-.mobile {
-  display: none;
 }
 
 
@@ -577,8 +588,7 @@ nav li .login {
 .cards .grid .content p {
   text-indent: 20px;
 }
-
-
+ 
 }
 
 
@@ -658,3 +668,6 @@ nav li .login {
     font-size: 25px;
     margin-bottom: 10px;
   }
+
+
+  
